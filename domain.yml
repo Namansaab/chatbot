@@ -1,0 +1,117 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - faq-logistic
+  - faq-svm
+  - logistic_reg
+  - linear_reg
+  - machine_learning
+  - ai
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_faq-logistic/about:
+  - text: "https://www.tutorialspoint.com/machine_learning_with_python/machine_learning_with_python_classification_algorithms_logistic_regression.htm"
+
+  utter_faq-logistic/diff:
+  - text: "https://www.analyticsvidhya.com/blog/2021/05/logistic-regression-supervised-learning-algorithm-for-classification/"
+
+  utter_faq-logistic/log_curve:
+  - text: "https://www.analyticsvidhya.com/blog/2021/05/logistic-regression-supervised-learning-algorithm-for-classification/"
+
+  utter_faq-logistic/sigmoid:
+  - text: "https://programmathically.com/the-sigmoid-function-and-binary-logistic-regression/"
+
+  utter_faq-logistic/sigmoid_formula:
+  - text: "https://programmathically.com/the-sigmoid-function-and-binary-logistic-regression/"
+
+  utter_faq-logistic/log_loss:
+  - text: "https://www.analyticsvidhya.com/blog/2020/11/binary-cross-entropy-aka-log-loss-the-cost-function-used-in-logistic-regression/"
+
+  utter_faq-logistic/loss_func:
+  - text: "https://programmathically.com/the-sigmoid-function-and-binary-logistic-regression/"
+
+  utter_faq-logistic/types:
+  - text: "https://www.javatpoint.com/logistic-regression-in-machine-learning"
+
+  utter_faq-logistic/activation_func:
+  - text: "https://www.geeksforgeeks.org/activation-functions-neural-networks/"
+
+  utter_faq-logistic/mle:
+  - text: "https://machinelearningmastery.com/logistic-regression-with-maximum-likelihood-estimation/"
+
+  utter_faq-svm/about:
+  - text: "https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/"
+
+  utter_faq-svm/hyperparameter:
+  - text:  "https://towardsdatascience.com/hyperparameter-tuning-for-support-vector-machines-c-and-gamma-parameters-6a5097416167"
+
+  utter_faq-svm/hinge:
+  - text: "https://towardsdatascience.com/a-definitive-explanation-to-hinge-loss-for-support-vector-machines-ab6d8d3178f1"
+
+  utter_faq-svm/polynomial:
+  - text: "https://en.wikipedia.org/wiki/Polynomial_kernel"
+
+  utter_faq-svm/regression:
+  - text: "https://www.analyticsvidhya.com/blog/2020/03/support-vector-regression-tutorial-for-machine-learning/"
+
+  utter_faq-svm/diff:
+  - text: "https://www.geeksforgeeks.org/differentiate-between-support-vector-machine-and-logistic-regression/"
+
+  utter_faq-svm/hard_soft:
+  - text: "https://stackoverflow.com/questions/4629505/svm-hard-or-soft-margins/4630731"
+
+  utter_faq-svm/kernel:
+  - text: "https://medium.datadriveninvestor.com/support-vector-machines-important-questions-a47224692495"
+
+  utter_faq-svm/c:
+  - text: "https://medium.com/@pushkarmandot/what-is-the-significance-of-c-value-in-support-vector-machine-28224e852c5a"
+
+  utter_faq-svm/large_margin:
+  - text: "https://medium.com/analytics-vidhya/support-vector-machine-intuition-validate-with-maths-e10fb8cc7f57"
+
+  utter_logreg:
+  - text: " Logistic regression is a simple and more efficient method for binary and linear classification problems. It is a classification model, which is very easy to realize and achieves very good performance with linearly separable classes. "
+
+  utter_linreg:
+  - text: "Linear Regression is a machine learning algorithm based on supervised learning. It performs a regression task. Regression models a target prediction value based on independent variables."
+
+  utter_ai:
+  - text: "Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems."
+  
+  utter_ml:
+  - text: "Machine learning (ML) is a type of artificial intelligence (AI) that allows software applications to become more accurate at predicting outcomes without being explicitly programmed to do so. Machine learning algorithms use historical data as input to predict new output values."
+ 
+  # utter_faq-logistic/:
+  # - text:
+
+  # utter_faq-logistic/:
+  # - text:
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

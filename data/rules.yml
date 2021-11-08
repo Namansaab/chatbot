@@ -1,0 +1,27 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: ans Faq's related to logistic regression
+  steps:
+  - intent: faq-logistic
+  - action: utter_faq-logistic
+
+- rule: ans Faq's related to svm
+  steps:
+  - intent: faq-svm
+  - action: utter_faq-svm
+# - rule:
+#   steps:
+#   - intent:
+#   - action:
